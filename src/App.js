@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css';
 
 function App() {
   const [password, setPassword] = useState('');
@@ -9,16 +10,16 @@ function App() {
   };
   
   return (
-    <div>
-      <h1>SecureMe</h1>
-      <p>Check if your password has been found in any data breaches!</p>
-      <input 
+    <div class="grid-container">
+      <h1 class="title">~/secureMe.sh</h1>
+      <p class="subtitle">Check if your password has been found in any data breaches!</p>
+      <input class="password"
         type="password" 
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Enter Password"
       />
-      <button onClick={handleClick}>Check</button>
+      <button class="check" onClick={handleClick}>Check</button>
     </div>
   );
 }

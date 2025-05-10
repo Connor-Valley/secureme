@@ -10,6 +10,58 @@ body {
     box-sizing: border-box;
 }
 
+.topbar {
+    background-color: #195660;
+    border-radius: 30px;
+    grid-column: 2 / span 10;
+    height: 88px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titlediv {
+    background-color: #5B9279;
+    grid-column: 2 / span 10;
+    border-radius: 30px;
+    height: 147px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.entrydiv {
+    background-color: #517E6A;
+    grid-column: 2 / span 10;
+    border-radius: 30px;
+    height: 147px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-wrapper input {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 13em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+  }
+  
+.input-wrapper input:focus {
+outline-color: lightcoral;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -29,14 +81,6 @@ body {
 .subtitle {
     font-size: 40;
     color: #E0E0E0;
-    grid-column: 5 / span 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.password {
     grid-column: 5 / span 4;
     display: flex;
     flex-direction: column;

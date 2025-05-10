@@ -14,15 +14,22 @@ function App() {
   
   return (
     <div class="grid-container">
-      <h1 class="title">~/secureMe.sh</h1>
-      <p class="subtitle">Check if your password has been found in any data breaches!</p>
-      <input class="password"
-        type="password" 
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Enter Password"
-      />
-      <button class="check" onClick={handleClick}>Check</button>
+
+      <div class="titlediv">
+        <h1 class="title">~/secureMe.sh</h1>
+        <p class="subtitle">Check if your password has been found in any data breaches!</p>
+      </div>
+      <div class="entrydiv">
+        <div class="input-wrapper">
+          <input id="password" 
+            type="password" 
+            placeholder="Password" 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button class="check" onClick={handleClick}>Check</button>
+      </div>
     </div>
   );
 }
